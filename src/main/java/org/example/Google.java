@@ -6,10 +6,10 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Google_Price_Calculate_App
+public class Google
 {
     WebDriver driver;
-    public Google_Price_Calculate_App(WebDriver driver) {
+    public Google(WebDriver driver) {
         this.driver=driver;
         PageFactory.initElements(driver,this);
     }

@@ -3,16 +3,16 @@ package org.example;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Google_Price_Cal_Test {
+public class GoogleTest {
     WebDriver driver;
-    Google_Price_Calculate_App obj;
+    Google obj;
     String VM_Of_Class;
     String region;
     String S_S_D;
@@ -29,13 +29,13 @@ public class Google_Price_Cal_Test {
         {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-            obj = new Google_Price_Calculate_App(driver);
+            obj = new Google(driver);
         }
-        else if(browser.equalsIgnoreCase("firefox"))
+        else if(browser.equalsIgnoreCase("edge"))
         {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-            obj = new Google_Price_Calculate_App(driver);
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+            obj = new Google(driver);
         }
         driver.get(Url);
     }

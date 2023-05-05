@@ -5,7 +5,7 @@
         <parameter name="browser" value="chrome"></parameter>
         <parameter name="Url" value="https://cloud.google.com/products/calculator"></parameter>
         <classes>
-        <class name="org.example.Google_Price_Cal_Test">
+        <class name="org.example.GoogleTest">
         <methods><include name="checkInformationInVmClassString"/>
             <include name="check_Data_is_correct"/>
         </methods>
@@ -13,10 +13,10 @@
     </classes>
 </test>
     <test verbose="2" preserve-order="true" name="Test2">
-        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="edge"></parameter>
         <parameter name="Url" value="https://cloud.google.com/products/calculator"></parameter>
         <classes>
-            <class name="org.example.Google_Price_Cal_Test">
+            <class name="org.example.GoogleTest">
                 <methods><include name="checkInformationInVmClassString"/>
                     <include name="check_Data_is_correct"/>
                 </methods>
