@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class PastebinTest {
@@ -13,7 +14,7 @@ public class PastebinTest {
     @Test
     public void loginverification() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.get("https://pastebin.com/");
         driver.manage().window().maximize();
 
