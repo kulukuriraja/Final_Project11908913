@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="Url" value="https://cloud.google.com/products/calculator"/>
+    <classes>
+      <class name="org.example.GoogleTest">
+        <methods>
+          <include name="checkInformationInVmClassString"/>
+          <include name="driverclode"/>
+          <include name="check_Data_is_correct"/>
+          <include name="openbrowser"/>
+        </methods>
+      </class> <!-- org.example.GoogleTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="Url" value="https://cloud.google.com/products/calculator"/>
+    <classes>
+      <class name="org.example.PastebinTest">
+        <methods>
+          <include name="loginverification"/>
+        </methods>
+      </class> <!-- org.example.PastebinTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
