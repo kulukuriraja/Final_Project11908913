@@ -13,11 +13,11 @@
     </classes>
 </test>
     <test verbose="2" preserve-order="true" name="Test2">
-        <parameter name="browser" value="edge"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <parameter name="Url" value="https://cloud.google.com/products/calculator"></parameter>
         <classes>
-            <class name="org.example.GoogleTest">
-                <methods><include name="checkInformationInVmClassString"/>
+            <class name="org.example.PastebinTest">
+                <methods><include name="loginverification"/>
                     <include name="check_Data_is_correct"/>
                 </methods>
             </class>
